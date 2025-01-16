@@ -1,3 +1,14 @@
+/*
+  The command : 
+        <BrowserRouter>
+        <App />
+        </BrowserRouter>
+  indicates the use of the BrowserRouter component from the react-router-dom library in a React application. 
+  This component is essential for enabling client-side routing, which allows the application to manage navigation 
+  and URL changes without reloading the entire page.
+*/
+
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -15,7 +26,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
