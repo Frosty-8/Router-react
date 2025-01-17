@@ -38,7 +38,7 @@ export const SignupForm = () => {
   });
   
     return (
-    <form onSubmit={formik.handleSubmit}>
+    <form onSubmit={formik.handleSubmit} onKeyDown={formik.handleKeyDown}>
         <label htmlFor="username">Username</label>
         <input type="text" id="username" onChange={formik.handleChange} value ={formik.values.username}/>
         <br />
