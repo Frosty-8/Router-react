@@ -20,7 +20,7 @@
 
 
 import {Routes,Route,Link} from 'react-router-dom'
-import {Home,Aboutus,Contactus,SignupForm} from './index'
+import {Home,Aboutus,Contactus,SignupForm,User} from './index'
 export function Mainfile() {
   return (
     <>
@@ -41,6 +41,9 @@ export function Mainfile() {
                 <li className='nav-item'>
                     <Link to='/SignupForm' className='nav-link'>Register</Link>
                 </li>
+                <li className='nav-item'>
+                    <Link to='/User' className='nav-link'>User Details</Link>
+                </li>
             </div>
         </nav>
 
@@ -49,6 +52,7 @@ export function Mainfile() {
             <Route path="Aboutus" element={<Aboutus/>}/>
             <Route path="Contactus" element={<Contactus/>}/>
             <Route path="SignupForm" element={<SignupForm/>}/>
+            <Route path="User/:id" element={<User/>}/>
         </Routes>
     </>
   )
